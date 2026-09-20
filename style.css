@@ -1,293 +1,293 @@
 /* ================================
-Team Quantum 42
-Clean monochrome theme
+   Team Quantum 42
+   Clean monochrome theme
 ================================ */
 
 :root {
---black: #0a0a0a;
---dark: #151515;
---gray: #666;
---light-gray: #e8e8e8;
---off-white: #f7f7f7;
---white: #ffffff;
+  --black: #0a0a0a;
+  --dark: #151515;
+  --gray: #666;
+  --light-gray: #e8e8e8;
+  --off-white: #f7f7f7;
+  --white: #ffffff;
 
---max-width: 1100px;
-
+  --max-width: 1100px;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  }
+}
 
 html {
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--white);
   color: var(--black);
   font-family:
-  -apple-system,
-  BlinkMacSystemFont,
-  "Segoe UI",
-  Roboto,
-  Helvetica,
-  Arial,
-  sans-serif;
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
   line-height: 1.7;
-  padding-left: 60px;
-  padding-right: 60px;
 }
 
 /* ================================
-Layout
+   Layout
 ================================ */
 
 .container {
-width: min(100% - 40px, var(--max-width));
-margin: 0 auto;
+  width: min(100% - 40px, var(--max-width));
+  margin: 0 auto;
 }
 
 /* ================================
-Header
+   Header
 ================================ */
 
 .hero {
-min-height: 70vh;
-display: flex;
-align-items: center;
-border-bottom: 1px solid var(--light-gray);
-background:
-linear-gradient(
-to bottom,
-#ffffff 0%,
-#fafafa 100%
-);
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--light-gray);
+  background:
+    linear-gradient(
+      to bottom,
+      #ffffff 0%,
+      #fafafa 100%
+    );
 }
 
 .hero .container {
-text-align: center;
+  text-align: center;
 }
 
 .logo {
-width: 520px;
-height: auto;
-display: block;
-margin: 0 auto 35px;
+  width: 520px;
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto 35px;
 }
 
 nav {
-display: flex;
-justify-content: center;
-gap: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
 nav a {
-position: relative;
-color: var(--black);
-text-decoration: none;
-font-size: 0.85rem;
-font-weight: 700;
-letter-spacing: 0.12em;
-text-transform: uppercase;
-padding: 8px 0;
+  position: relative;
+  color: var(--black);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 8px 0;
 }
 
 nav a::after {
-content: "";
-position: absolute;
-left: 0;
-bottom: 0;
-width: 0;
-height: 2px;
-background: var(--black);
-transition: width 0.25s ease;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: var(--black);
+  transition: width 0.25s ease;
 }
 
 nav a:hover::after {
-width: 100%;
+  width: 100%;
 }
 
 /* ================================
-Sections
+   Sections
 ================================ */
 
 .section {
-padding: 120px 0;
+  padding: 120px 0;
 }
 
 .about {
-background: var(--white);
+  background: var(--white);
 }
 
 .bot {
-background: var(--off-white);
-border-top: 1px solid var(--light-gray);
+  background: var(--off-white);
+  border-top: 1px solid var(--light-gray);
 }
 
 /* ================================
-Typography
+   Typography
 ================================ */
 
 .eyebrow {
-margin-bottom: 18px;
-color: var(--gray);
-font-size: 0.72rem;
-font-weight: 800;
-letter-spacing: 0.2em;
-text-transform: uppercase;
+  margin-bottom: 18px;
+  color: var(--gray);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 h1 {
-font-size: clamp(3rem, 8vw, 7rem);
-line-height: 0.95;
-letter-spacing: -0.06em;
-font-weight: 800;
-max-width: 900px;
+  font-size: clamp(3rem, 8vw, 7rem);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+  font-weight: 800;
+  max-width: 900px;
 }
 
 h2 {
-font-size: clamp(2.5rem, 6vw, 5rem);
-line-height: 1;
-letter-spacing: -0.05em;
-margin-bottom: 35px;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  margin-bottom: 35px;
 }
 
 h3 {
-font-size: 1.5rem;
-margin-bottom: 5px;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
 }
 
 .intro {
-max-width: 700px;
-margin-top: 35px;
-font-size: clamp(1.2rem, 2vw, 1.5rem);
-line-height: 1.5;
-color: #444;
+  max-width: 700px;
+  margin-top: 35px;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  line-height: 1.5;
+  color: #444;
 }
 
 .about p:not(.eyebrow):not(.intro) {
-max-width: 720px;
-margin-bottom: 25px;
-font-size: 1.05rem;
-color: #333;
+  max-width: 720px;
+  margin-bottom: 25px;
+  font-size: 1.05rem;
+  color: #333;
 }
 
 strong {
-color: var(--black);
+  color: var(--black);
 }
 
 /* ================================
-Divider
+   Divider
 ================================ */
 
 .divider {
-width: 60px;
-height: 4px;
-background: var(--black);
-margin: 45px 0;
+  width: 60px;
+  height: 4px;
+  background: var(--black);
+  margin: 45px 0;
 }
 
 /* ================================
-Robot Card
+   Robot Section
 ================================ */
 
 .bot > .container > p:not(.eyebrow) {
-max-width: 650px;
-color: #444;
-font-size: 1.1rem;
+  max-width: 650px;
+  color: #444;
+  font-size: 1.1rem;
 }
 
+/* ================================
+   Robot Card
+================================ */
+
 .bot-card {
-margin-top: 60px;
-padding: 45px;
-background: var(--black);
-color: var(--white);
+  margin-top: 60px;
+  padding: 45px;
+  background: var(--black);
+  color: var(--white);
 
-```
-display: flex;
-align-items: center;
-gap: 35px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
 
-border-radius: 2px;
-overflow: hidden;
-```
-
+  border-radius: 2px;
+  overflow: hidden;
 }
 
 .bot-number {
-font-size: clamp(4rem, 10vw, 8rem);
-line-height: 0.8;
-font-weight: 900;
-letter-spacing: -0.08em;
+  font-size: clamp(4rem, 10vw, 8rem);
+  line-height: 0.8;
+  font-weight: 900;
+  letter-spacing: -0.08em;
 }
 
 .bot-card h3 {
-font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 .bot-card p {
-color: #aaa;
+  color: #aaa;
 }
 
 /* ================================
-Footer
+   Footer
 ================================ */
 
 footer {
-background: var(--black);
-color: #aaa;
-padding: 25px 0;
-font-size: 0.7rem;
-letter-spacing: 0.12em;
-font-weight: 700;
+  background: var(--black);
+  color: #aaa;
+  padding: 25px 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  font-weight: 700;
 }
 
 footer .container {
-display: flex;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* ================================
-Responsive
+   Responsive
 ================================ */
 
 @media (max-width: 600px) {
 
-```
-.container {
+  .container {
     width: min(100% - 30px, var(--max-width));
-}
+  }
 
-.hero {
+  .hero {
     min-height: 60vh;
-}
+  }
 
-nav {
+  .logo {
+    width: 420px;
+  }
+
+  nav {
     gap: 25px;
-}
+  }
 
-.section {
+  .section {
     padding: 80px 0;
-}
+  }
 
-.bot-card {
+  .bot-card {
     padding: 30px;
     gap: 20px;
-}
+  }
 
-.bot-number {
+  .bot-number {
     font-size: 4rem;
-}
+  }
 
-footer .container {
+  footer .container {
     flex-direction: column;
     gap: 8px;
     align-items: flex-start;
+  }
 }
-
-}
-
