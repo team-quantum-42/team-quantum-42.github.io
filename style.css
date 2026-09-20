@@ -72,7 +72,7 @@ text-align: center;
 }
 
 .logo {
-width: min(520px, 85%);
+width: 520px;
 height: auto;
 display: block;
 margin: 0 auto 35px;
